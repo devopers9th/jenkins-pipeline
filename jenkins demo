@@ -1,3 +1,11 @@
-add file in git repo
-save repo
-jenkins will fetch the code
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
